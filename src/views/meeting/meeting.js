@@ -8,7 +8,7 @@ function Meeting() {
     const [meetingDetail , setMeetingDetails] = useState({
         title:"",
         date:"",
-        attendence:[]
+        attendance:[]
     });
 
     useEffect(()=>{
@@ -26,7 +26,7 @@ function Meeting() {
         <h1>meeting</h1>
         <h2>Title : {meetingDetail.title}</h2>
         <h3> date : {meetingDetail.date}</h3>
-        <h3> Attendence : {meetingDetail.attendence.join(" ,")}</h3>
+        <h3> Attendence : {meetingDetail.attendance.join(" ,")}</h3>
     </div>
   )
 }
